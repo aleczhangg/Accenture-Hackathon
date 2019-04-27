@@ -1,4 +1,5 @@
 import hashlib
+from Ticket import Ticket
 
 
 class Block:
@@ -9,15 +10,12 @@ class Block:
 
     def __repr__(self):
         dashes = "-" * 100 + "\n"
-        string = dashes + "BLOCK Hash: " + self.calculate_hash() + "\n" + dashes
+        string = dashes + "Block Hash: " + self.calculate_hash() + "\n" + dashes
 
-        for entry in self.pool:
-            string += repr(entry)
+        for ticket in self.pool:
+            string += repr(ticket)
 
         return string + dashes
-
-    def add_entry(self, entry):
-        self.pool.append(entry)
 
     # Use SHA-256 to return a hash of the block.
     def calculate_hash(self, nonce=None):
