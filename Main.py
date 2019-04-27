@@ -41,8 +41,11 @@ if __name__ == "__main__":
             print(blockchain)
         elif prompt[0] == "find":
             tid = prompt[1]
-            print(blockchain.find_owner(tid))
+            print("Ticket {} is owned by {}.".format(tid, blockchain.find_owner(tid)))
         elif prompt[0] == "transfer":
+            if len(prompt) != 5:
+                print("Invalid arguments")
+                continue
             blockchain.transfer_ticket(prompt[1], prompt[2], prompt[3], prompt[4])
         elif prompt[0] == "head":
             print(blockchain.head)

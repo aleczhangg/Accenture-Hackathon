@@ -4,13 +4,17 @@ import random
 
 
 def random_word():
-    file = open("words.txt", 'r')
-    words = file.readlines()
-    choice = ""
-    while len(choice) < 3:
-        choice = random.choice(words)
-        choice = choice.capitalize()
-    return choice.strip("\n")
+    file_adjectives = open("adjectives.txt", 'r')
+    file_animals = open("animals.txt", 'r')
+    adjectives = file_adjectives.readlines()
+    animals = file_animals.readlines()
+
+    adjective = random.choice(adjectives).strip("\n").capitalize()
+    animal = random.choice(animals).strip("\n")
+
+    choice = adjective + animal
+    return choice.replace(" ", "")
+
 
 
 class Blockchain:
@@ -65,7 +69,7 @@ class Blockchain:
         while block is not None:
             for ticket in block.pool:
                 if ticket.tid == tid:
-                    return ticket.person
+                    return ticket.owner
             block = block.previous_block
 
     def add_og_ticket(self, owner):
