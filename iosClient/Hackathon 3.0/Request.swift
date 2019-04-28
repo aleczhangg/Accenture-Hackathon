@@ -2,8 +2,7 @@
 //  ViewController.swift
 //  Hackathon 3.0
 //
-//  Created by Jerry Jin on 27/4/19.
-//  Copyright © 2019 Arise. All rights reserved.
+//  Created by Alec Zhang and Jerry Jin on 27/4/19.
 //
 
 import UIKit
@@ -11,7 +10,7 @@ import SwiftSocket
 
 class Request: UIViewController, UITextFieldDelegate {
     
-    let ourName = "Ticketek"
+    let ourName = "Alec"
     let hostname = "localhost"
     let portNumber = Int32(8000)
     
@@ -59,13 +58,14 @@ class Request: UIViewController, UITextFieldDelegate {
             return
         }
         
+        // Remove the dollar sign from the usual input.
         var inputPrice = resalePriceField.text!
         let sliced = String(inputPrice.dropFirst())
         
         let message = "transfer|" + (ticketIDField.text!) + "|" + ourName + "|" + (ownerNameField.text!) + "|" + (sliced)
 
         print(message)
-        // Some actual client stuff.
+        // Setup a socket using the SwiftSocket library.
         let client = TCPClient(address: hostname, port: portNumber)
 
         // Try and connect to the server.
@@ -73,13 +73,9 @@ class Request: UIViewController, UITextFieldDelegate {
         case .success:
             appendToTextField(string: "Connected to host \(client.address)")
             if let response = sendRequest(string: message, using: client) {
-                print("hello world")
-                print(response)
                 if response == "1" {
                     // Need to handle this?
                     performSegue(withIdentifier: "SuccessSegue", sender: nil)
-
-
                 } else if response == "-1" {
                     // Need to handle this?
                     let alert = UIAlertView()
@@ -97,6 +93,7 @@ class Request: UIViewController, UITextFieldDelegate {
         client.close()
     }
     
+    // Sends a request to a given server.
     private func sendRequest(string: String, using client: TCPClient) -> String? {
         appendToTextField(string: "Sending data ... ")
         
@@ -109,6 +106,7 @@ class Request: UIViewController, UITextFieldDelegate {
         }
     }
     
+    // Receives data back from the specific server.
     private func readResponse(from client: TCPClient) -> String? {
         guard let response = client.read(1024*10, timeout: 2000) else { return nil }
         
@@ -119,15 +117,7 @@ class Request: UIViewController, UITextFieldDelegate {
         textView.text.appending("\n\(string)")
     }
     
-    // Jerry
-//
-//    @IBAction func showError(_ sender: Any) {
-//        let alert = UIAlertController(title: "An unexpected error has occured", message: "Please try again", preferredStyle: .alert)
-//
-//        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
-//
-//        self.present(alert, animated: true)
-//    }
+
     
 } // end of class
 

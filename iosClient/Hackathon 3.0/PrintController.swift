@@ -15,6 +15,7 @@ class PrintController: UIViewController {
     let port = Int32(8000)
     @IBOutlet weak var textView: UITextView!
     
+    // Prints the current blockchain to the app.
     override func viewDidLoad() {
         super.viewDidLoad()
         let response = loadBlockchain()
@@ -22,6 +23,7 @@ class PrintController: UIViewController {
         
     }
     
+    // Collects blockchain data from the server.
     private func loadBlockchain() -> String {
         let client = TCPClient(address: "localhost", port: port)
         

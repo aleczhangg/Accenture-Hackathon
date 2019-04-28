@@ -5,7 +5,6 @@ class Ticket:
     # TODO: What else do we want an entry to contain?
     def __init__(self, previous_owner, owner, price):
         self.time = datetime.datetime.now()
-        self.type = None
         self.tid = None
         self.prev_owner = previous_owner   # This should be an object,
         self.owner = owner

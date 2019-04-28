@@ -3,6 +3,7 @@ from Ticket import Ticket
 import random
 
 
+# Function that will generate a random name for our ticket IDs.
 def random_word():
     file_adjectives = open("adjectives.txt", 'r')
     file_animals = open("animals.txt", 'r')
@@ -33,6 +34,7 @@ class Blockchain:
 
         return string
 
+    # Commit all transactions stored in the pool to the blockchain.
     def commit(self, nonce):
         # If there are no entries to be committed, just ignore this.
         if len(self.pool) == 0:
@@ -55,6 +57,7 @@ class Blockchain:
                 print("New block committed!")
                 return True
 
+    # Given a ticket ID, find the previous transaction where that ticket existed.
     def find_prev_ticket(self, tid):
         block = self.head
         while block is not None:
@@ -64,6 +67,7 @@ class Blockchain:
             block = block.previous_block
         return None
 
+    # Given a ticket ID, find the current owner of that ticket.
     def find_owner(self, tid):
         block = self.head
         while block is not None:
@@ -73,27 +77,14 @@ class Blockchain:
             block = block.previous_block
         return None
 
-    def add_bp1_ticket(self, owner):
+    # Methods to initialise the blockchain server for presentation.
+    def add_og_ticket(self, owner):
         ticket = Ticket("source", owner, 0)
         ticket.tid = random_word()
         ticket.price = 0
-        ticket.type = "BLACKPINK"
         self.pool.append(ticket)
 
-    def add_bp2_ticket(self, owner):
-        ticket = Ticket("source", owner, 0)
-        ticket.tid = random_word()
-        ticket.price = 1
-        ticket.type = "BLACKPINK"
-        self.pool.append(ticket)
-
-    def add_pm_ticket(self, owner):
-        ticket = Ticket("source", owner, 0)
-        ticket.tid = random_word()
-        ticket.price = 2
-        ticket.type = "Post Malone"
-        self.pool.append(ticket)
-
+    # IMPORTANT: Transfers a ticket tid from old_owner to new_owner.
     def transfer_ticket(self, tid, old_owner, new_owner, price):
         # Find the previous transaction involving this ticket id.
         prev_ticket = self.find_prev_ticket(tid)
@@ -108,6 +99,7 @@ class Blockchain:
             self.pool.append(new_ticket)
             return "1"
 
+    # Find all tickets owned by a user.
     def find_owned_tickets(self, owner):
         list = []
         visited_tids = []

@@ -2,7 +2,7 @@ from Blockchain import Blockchain
 from PeriodicCommit import PeriodicCommit
 import socket
 
-
+# Server handler that deals with user data.
 def server_handler(data, client):
     prompt = data.split("|")
     if prompt[0] == "print":
@@ -45,10 +45,11 @@ if __name__ == "__main__":
     # Set up the blockchain and commits first.
     blockchain = Blockchain()
     # Start adding already existing tickets.
-    blockchain.add_bp1_ticket("Ticketek")
-    blockchain.add_bp2_ticket("Ticketek")
-    blockchain.add_pm_ticket("Ticketek")
+    blockchain.add_og_ticket("Alec")
+    blockchain.add_og_ticket("Jerry")
+    blockchain.add_og_ticket("Tiger")
 
+    # Start a thread that continually tries to commit.
     thread_commit = PeriodicCommit(blockchain)
     thread_commit.start()
 
@@ -76,5 +77,3 @@ if __name__ == "__main__":
                     except Exception:
                         break
                 conn.close()
-
-                # conn.sendall(data) # Can send data back to client.

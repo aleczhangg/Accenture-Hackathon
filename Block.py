@@ -1,5 +1,4 @@
 import hashlib
-from Ticket import Ticket
 
 
 class Block:
