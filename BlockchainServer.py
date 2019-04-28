@@ -23,7 +23,7 @@ def server_handler(data, client):
     elif prompt[0] == "transfer":
         print("Transfer request received.")
         if len(prompt) != 5:
-            message = "Invalid arguments\n\n"
+            message = "-1"
             client.sendall(message.encode())
             return "Successful transfer."
         success = blockchain.transfer_ticket(prompt[1], prompt[2], prompt[3], prompt[4])

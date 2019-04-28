@@ -97,8 +97,6 @@ class Blockchain:
     def transfer_ticket(self, tid, old_owner, new_owner, price):
         # Find the previous transaction involving this ticket id.
         prev_ticket = self.find_prev_ticket(tid)
-        print(new_owner)
-        print(prev_ticket.owner)
         # If this previous transaction is not found, return an error.
         if prev_ticket is None or prev_ticket.owner != old_owner:
             return "-1"
