@@ -1,6 +1,6 @@
 # Accenture Hackathon: Team 7
 ### Main Ideas
-Our project deals with the issue of ticket fraud: namely the selling of duplicate copies, and the selling of counterfeit copies. Our solution implements a blockchain ledger system for transactions, and is done through *a blockchain server* and an *iOS client* that interfaces with the server.
+Our project deals with the issue of ticket fraud: namely the selling of duplicate copies, and the selling of counterfeit copies of say concert tickets. Our solution implements a blockchain ledger system that keeps track of exchanges of these tickets, and is done through *a blockchain server* and an *iOS client* that interfaces with the server.
 
 ### Blockchain Server
 The most important file is BlockchainServer.py, run this in Terminal and it should set up a server at localhost:8000.
