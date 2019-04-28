@@ -13,8 +13,8 @@ def random_word():
     animal = random.choice(animals).strip("\n")
 
     choice = adjective + animal
+    choice = choice.replace('-', '')
     return choice.replace(" ", "")
-
 
 
 class Blockchain:
@@ -71,24 +71,56 @@ class Blockchain:
                 if ticket.tid == tid:
                     return ticket.owner
             block = block.previous_block
+        return None
 
-    def add_og_ticket(self, owner):
+    def add_bp1_ticket(self, owner):
         ticket = Ticket("source", owner, 0)
         ticket.tid = random_word()
+        ticket.price = 0
+        ticket.type = "BLACKPINK"
+        self.pool.append(ticket)
+
+    def add_bp2_ticket(self, owner):
+        ticket = Ticket("source", owner, 0)
+        ticket.tid = random_word()
+        ticket.price = 1
+        ticket.type = "BLACKPINK"
+        self.pool.append(ticket)
+
+    def add_pm_ticket(self, owner):
+        ticket = Ticket("source", owner, 0)
+        ticket.tid = random_word()
+        ticket.price = 2
+        ticket.type = "Post Malone"
         self.pool.append(ticket)
 
     def transfer_ticket(self, tid, old_owner, new_owner, price):
         # Find the previous transaction involving this ticket id.
         prev_ticket = self.find_prev_ticket(tid)
+        print(new_owner)
+        print(prev_ticket.owner)
         # If this previous transaction is not found, return an error.
-        if prev_ticket is None:
-            print("Failed: Ticket is not owned by {}.".format(old_owner))
+        if prev_ticket is None or prev_ticket.owner != old_owner:
+            return "-1"
         # If it is found, do the transfer.
         else:
             new_ticket = Ticket(old_owner, new_owner, price)
             new_ticket.tid = tid
             new_ticket.resale_count = prev_ticket.resale_count + 1
             self.pool.append(new_ticket)
-            print("Successful.")
+            return "1"
 
+    def find_owned_tickets(self, owner):
+        list = []
+        visited_tids = []
+        block = self.head
+        while block is not None:
+            for ticket in block.pool:
+                if ticket.tid not in visited_tids:
+                    if ticket.owner == owner:
+                        list.append(ticket)
+                    visited_tids.append(ticket.tid)
+
+            block = block.previous_block
+        return list
 

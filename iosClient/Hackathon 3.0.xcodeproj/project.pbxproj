@@ -1,0 +1,744 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A1F56CEC37BF9822272CB04 /* Pods_Hackathon_3_0.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F1A2C69CEAFD81636B871CA /* Pods_Hackathon_3_0.framework */; };
+		0A2DE6BCD5AC1B776C48AF53 /* Pods_Hackathon_3_0UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FB8BDB9D13C8157E1C73A8E /* Pods_Hackathon_3_0UITests.framework */; };
+		813E11E422751F6800086164 /* PrintController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813E11E322751F6800086164 /* PrintController.swift */; };
+		96160302F9A7B7F0455B3EB0 /* Pods_Hackathon_3_0Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE24702CE490E8A3C2AA6575 /* Pods_Hackathon_3_0Tests.framework */; };
+		BCA4731B2274517C0027CA71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA4731A2274517C0027CA71 /* AppDelegate.swift */; };
+		BCA4731D2274517C0027CA71 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA4731C2274517C0027CA71 /* ViewController.swift */; };
+		BCA473202274517C0027CA71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCA4731E2274517C0027CA71 /* Main.storyboard */; };
+		BCA473222274517D0027CA71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCA473212274517D0027CA71 /* Assets.xcassets */; };
+		BCA473252274517D0027CA71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCA473232274517D0027CA71 /* LaunchScreen.storyboard */; };
+		BCA473302274517D0027CA71 /* Hackathon_3_0Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA4732F2274517D0027CA71 /* Hackathon_3_0Tests.swift */; };
+		BCA4733B2274517D0027CA71 /* Hackathon_3_0UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA4733A2274517D0027CA71 /* Hackathon_3_0UITests.swift */; };
+		BCA47349227471FB0027CA71 /* button.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA47348227471FA0027CA71 /* button.swift */; };
+		BCA4734D2274D92D0027CA71 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA4734C2274D92D0027CA71 /* Request.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BCA4732C2274517D0027CA71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCA4730F2274517C0027CA71 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCA473162274517C0027CA71;
+			remoteInfo = "Hackathon 3.0";
+		};
+		BCA473372274517D0027CA71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCA4730F2274517C0027CA71 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCA473162274517C0027CA71;
+			remoteInfo = "Hackathon 3.0";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		54FA0C67451AB4A9948D7318 /* Pods-Hackathon 3.0Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackathon 3.0Tests.release.xcconfig"; path = "Target Support Files/Pods-Hackathon 3.0Tests/Pods-Hackathon 3.0Tests.release.xcconfig"; sourceTree = "<group>"; };
+		5F1A2C69CEAFD81636B871CA /* Pods_Hackathon_3_0.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hackathon_3_0.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		666B8F86D2733C2137FD51C5 /* Pods-Hackathon 3.0UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackathon 3.0UITests.release.xcconfig"; path = "Target Support Files/Pods-Hackathon 3.0UITests/Pods-Hackathon 3.0UITests.release.xcconfig"; sourceTree = "<group>"; };
+		6BFF3A2DED1E61EE6682CC00 /* Pods-Hackathon 3.0UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackathon 3.0UITests.debug.xcconfig"; path = "Target Support Files/Pods-Hackathon 3.0UITests/Pods-Hackathon 3.0UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6FB8BDB9D13C8157E1C73A8E /* Pods_Hackathon_3_0UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hackathon_3_0UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		813E11E322751F6800086164 /* PrintController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintController.swift; sourceTree = "<group>"; };
+		884208188C58A8EAAC670DF0 /* Pods-Hackathon 3.0.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackathon 3.0.release.xcconfig"; path = "Target Support Files/Pods-Hackathon 3.0/Pods-Hackathon 3.0.release.xcconfig"; sourceTree = "<group>"; };
+		BCA473172274517C0027CA71 /* Hackathon 3.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hackathon 3.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCA4731A2274517C0027CA71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BCA4731C2274517C0027CA71 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BCA4731F2274517C0027CA71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BCA473212274517D0027CA71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BCA473242274517D0027CA71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BCA473262274517D0027CA71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCA4732B2274517D0027CA71 /* Hackathon 3.0Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hackathon 3.0Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCA4732F2274517D0027CA71 /* Hackathon_3_0Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hackathon_3_0Tests.swift; sourceTree = "<group>"; };
+		BCA473312274517D0027CA71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCA473362274517D0027CA71 /* Hackathon 3.0UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hackathon 3.0UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCA4733A2274517D0027CA71 /* Hackathon_3_0UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hackathon_3_0UITests.swift; sourceTree = "<group>"; };
+		BCA4733C2274517D0027CA71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCA47348227471FA0027CA71 /* button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = button.swift; sourceTree = "<group>"; };
+		BCA4734C2274D92D0027CA71 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		CDCF8244A791CE301B438F92 /* Pods-Hackathon 3.0Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackathon 3.0Tests.debug.xcconfig"; path = "Target Support Files/Pods-Hackathon 3.0Tests/Pods-Hackathon 3.0Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		D1C2DE9BF9C26BF052FAAA98 /* Pods-Hackathon 3.0.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackathon 3.0.debug.xcconfig"; path = "Target Support Files/Pods-Hackathon 3.0/Pods-Hackathon 3.0.debug.xcconfig"; sourceTree = "<group>"; };
+		DE24702CE490E8A3C2AA6575 /* Pods_Hackathon_3_0Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hackathon_3_0Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BCA473142274517C0027CA71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A1F56CEC37BF9822272CB04 /* Pods_Hackathon_3_0.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCA473282274517D0027CA71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96160302F9A7B7F0455B3EB0 /* Pods_Hackathon_3_0Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCA473332274517D0027CA71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A2DE6BCD5AC1B776C48AF53 /* Pods_Hackathon_3_0UITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F550AC79B2DABE71EA620D1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D1C2DE9BF9C26BF052FAAA98 /* Pods-Hackathon 3.0.debug.xcconfig */,
+				884208188C58A8EAAC670DF0 /* Pods-Hackathon 3.0.release.xcconfig */,
+				CDCF8244A791CE301B438F92 /* Pods-Hackathon 3.0Tests.debug.xcconfig */,
+				54FA0C67451AB4A9948D7318 /* Pods-Hackathon 3.0Tests.release.xcconfig */,
+				6BFF3A2DED1E61EE6682CC00 /* Pods-Hackathon 3.0UITests.debug.xcconfig */,
+				666B8F86D2733C2137FD51C5 /* Pods-Hackathon 3.0UITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BCA4730E2274517C0027CA71 = {
+			isa = PBXGroup;
+			children = (
+				BCA473192274517C0027CA71 /* Hackathon 3.0 */,
+				BCA4732E2274517D0027CA71 /* Hackathon 3.0Tests */,
+				BCA473392274517D0027CA71 /* Hackathon 3.0UITests */,
+				BCA473182274517C0027CA71 /* Products */,
+				1F550AC79B2DABE71EA620D1 /* Pods */,
+				BDDCC3AB2D76F81B63FB04FC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BCA473182274517C0027CA71 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BCA473172274517C0027CA71 /* Hackathon 3.0.app */,
+				BCA4732B2274517D0027CA71 /* Hackathon 3.0Tests.xctest */,
+				BCA473362274517D0027CA71 /* Hackathon 3.0UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BCA473192274517C0027CA71 /* Hackathon 3.0 */ = {
+			isa = PBXGroup;
+			children = (
+				BCA4734C2274D92D0027CA71 /* Request.swift */,
+				813E11E322751F6800086164 /* PrintController.swift */,
+				BCA4731A2274517C0027CA71 /* AppDelegate.swift */,
+				BCA4731C2274517C0027CA71 /* ViewController.swift */,
+				BCA47348227471FA0027CA71 /* button.swift */,
+				BCA4731E2274517C0027CA71 /* Main.storyboard */,
+				BCA473212274517D0027CA71 /* Assets.xcassets */,
+				BCA473232274517D0027CA71 /* LaunchScreen.storyboard */,
+				BCA473262274517D0027CA71 /* Info.plist */,
+			);
+			path = "Hackathon 3.0";
+			sourceTree = "<group>";
+		};
+		BCA4732E2274517D0027CA71 /* Hackathon 3.0Tests */ = {
+			isa = PBXGroup;
+			children = (
+				BCA4732F2274517D0027CA71 /* Hackathon_3_0Tests.swift */,
+				BCA473312274517D0027CA71 /* Info.plist */,
+			);
+			path = "Hackathon 3.0Tests";
+			sourceTree = "<group>";
+		};
+		BCA473392274517D0027CA71 /* Hackathon 3.0UITests */ = {
+			isa = PBXGroup;
+			children = (
+				BCA4733A2274517D0027CA71 /* Hackathon_3_0UITests.swift */,
+				BCA4733C2274517D0027CA71 /* Info.plist */,
+			);
+			path = "Hackathon 3.0UITests";
+			sourceTree = "<group>";
+		};
+		BDDCC3AB2D76F81B63FB04FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5F1A2C69CEAFD81636B871CA /* Pods_Hackathon_3_0.framework */,
+				DE24702CE490E8A3C2AA6575 /* Pods_Hackathon_3_0Tests.framework */,
+				6FB8BDB9D13C8157E1C73A8E /* Pods_Hackathon_3_0UITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BCA473162274517C0027CA71 /* Hackathon 3.0 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCA4733F2274517D0027CA71 /* Build configuration list for PBXNativeTarget "Hackathon 3.0" */;
+			buildPhases = (
+				287B4A26005F5D6E9AA26001 /* [CP] Check Pods Manifest.lock */,
+				BCA473132274517C0027CA71 /* Sources */,
+				BCA473142274517C0027CA71 /* Frameworks */,
+				BCA473152274517C0027CA71 /* Resources */,
+				FB4718219924DA9991F3B611 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Hackathon 3.0";
+			productName = "Hackathon 3.0";
+			productReference = BCA473172274517C0027CA71 /* Hackathon 3.0.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BCA4732A2274517D0027CA71 /* Hackathon 3.0Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCA473422274517D0027CA71 /* Build configuration list for PBXNativeTarget "Hackathon 3.0Tests" */;
+			buildPhases = (
+				D1B5DE5033EFFB570050BD90 /* [CP] Check Pods Manifest.lock */,
+				BCA473272274517D0027CA71 /* Sources */,
+				BCA473282274517D0027CA71 /* Frameworks */,
+				BCA473292274517D0027CA71 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCA4732D2274517D0027CA71 /* PBXTargetDependency */,
+			);
+			name = "Hackathon 3.0Tests";
+			productName = "Hackathon 3.0Tests";
+			productReference = BCA4732B2274517D0027CA71 /* Hackathon 3.0Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BCA473352274517D0027CA71 /* Hackathon 3.0UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCA473452274517D0027CA71 /* Build configuration list for PBXNativeTarget "Hackathon 3.0UITests" */;
+			buildPhases = (
+				5BF2C50F32F51DD3C992DFFE /* [CP] Check Pods Manifest.lock */,
+				BCA473322274517D0027CA71 /* Sources */,
+				BCA473332274517D0027CA71 /* Frameworks */,
+				BCA473342274517D0027CA71 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCA473382274517D0027CA71 /* PBXTargetDependency */,
+			);
+			name = "Hackathon 3.0UITests";
+			productName = "Hackathon 3.0UITests";
+			productReference = BCA473362274517D0027CA71 /* Hackathon 3.0UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BCA4730F2274517C0027CA71 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Arise;
+				TargetAttributes = {
+					BCA473162274517C0027CA71 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					BCA4732A2274517D0027CA71 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = BCA473162274517C0027CA71;
+					};
+					BCA473352274517D0027CA71 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = BCA473162274517C0027CA71;
+					};
+				};
+			};
+			buildConfigurationList = BCA473122274517C0027CA71 /* Build configuration list for PBXProject "Hackathon 3.0" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BCA4730E2274517C0027CA71;
+			productRefGroup = BCA473182274517C0027CA71 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BCA473162274517C0027CA71 /* Hackathon 3.0 */,
+				BCA4732A2274517D0027CA71 /* Hackathon 3.0Tests */,
+				BCA473352274517D0027CA71 /* Hackathon 3.0UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BCA473152274517C0027CA71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCA473252274517D0027CA71 /* LaunchScreen.storyboard in Resources */,
+				BCA473222274517D0027CA71 /* Assets.xcassets in Resources */,
+				BCA473202274517C0027CA71 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCA473292274517D0027CA71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCA473342274517D0027CA71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		287B4A26005F5D6E9AA26001 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hackathon 3.0-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5BF2C50F32F51DD3C992DFFE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hackathon 3.0UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1B5DE5033EFFB570050BD90 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hackathon 3.0Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB4718219924DA9991F3B611 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hackathon 3.0/Pods-Hackathon 3.0-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftSocket/SwiftSocket.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSocket.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Hackathon 3.0/Pods-Hackathon 3.0-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BCA473132274517C0027CA71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				813E11E422751F6800086164 /* PrintController.swift in Sources */,
+				BCA4731D2274517C0027CA71 /* ViewController.swift in Sources */,
+				BCA4734D2274D92D0027CA71 /* Request.swift in Sources */,
+				BCA4731B2274517C0027CA71 /* AppDelegate.swift in Sources */,
+				BCA47349227471FB0027CA71 /* button.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCA473272274517D0027CA71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCA473302274517D0027CA71 /* Hackathon_3_0Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCA473322274517D0027CA71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCA4733B2274517D0027CA71 /* Hackathon_3_0UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BCA4732D2274517D0027CA71 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCA473162274517C0027CA71 /* Hackathon 3.0 */;
+			targetProxy = BCA4732C2274517D0027CA71 /* PBXContainerItemProxy */;
+		};
+		BCA473382274517D0027CA71 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCA473162274517C0027CA71 /* Hackathon 3.0 */;
+			targetProxy = BCA473372274517D0027CA71 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BCA4731E2274517C0027CA71 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCA4731F2274517C0027CA71 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BCA473232274517D0027CA71 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCA473242274517D0027CA71 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BCA4733D2274517D0027CA71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BCA4733E2274517D0027CA71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BCA473402274517D0027CA71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1C2DE9BF9C26BF052FAAA98 /* Pods-Hackathon 3.0.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F9UZMS3W74;
+				INFOPLIST_FILE = "Hackathon 3.0/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.arise.Hackathon-3-0";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BCA473412274517D0027CA71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 884208188C58A8EAAC670DF0 /* Pods-Hackathon 3.0.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F9UZMS3W74;
+				INFOPLIST_FILE = "Hackathon 3.0/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.arise.Hackathon-3-0";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BCA473432274517D0027CA71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDCF8244A791CE301B438F92 /* Pods-Hackathon 3.0Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F9UZMS3W74;
+				INFOPLIST_FILE = "Hackathon 3.0Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.arise.Hackathon-3-0Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hackathon 3.0.app/Hackathon 3.0";
+			};
+			name = Debug;
+		};
+		BCA473442274517D0027CA71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54FA0C67451AB4A9948D7318 /* Pods-Hackathon 3.0Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F9UZMS3W74;
+				INFOPLIST_FILE = "Hackathon 3.0Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.arise.Hackathon-3-0Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hackathon 3.0.app/Hackathon 3.0";
+			};
+			name = Release;
+		};
+		BCA473462274517D0027CA71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BFF3A2DED1E61EE6682CC00 /* Pods-Hackathon 3.0UITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F9UZMS3W74;
+				INFOPLIST_FILE = "Hackathon 3.0UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.arise.Hackathon-3-0UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Hackathon 3.0";
+			};
+			name = Debug;
+		};
+		BCA473472274517D0027CA71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 666B8F86D2733C2137FD51C5 /* Pods-Hackathon 3.0UITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F9UZMS3W74;
+				INFOPLIST_FILE = "Hackathon 3.0UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.arise.Hackathon-3-0UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Hackathon 3.0";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BCA473122274517C0027CA71 /* Build configuration list for PBXProject "Hackathon 3.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCA4733D2274517D0027CA71 /* Debug */,
+				BCA4733E2274517D0027CA71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCA4733F2274517D0027CA71 /* Build configuration list for PBXNativeTarget "Hackathon 3.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCA473402274517D0027CA71 /* Debug */,
+				BCA473412274517D0027CA71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCA473422274517D0027CA71 /* Build configuration list for PBXNativeTarget "Hackathon 3.0Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCA473432274517D0027CA71 /* Debug */,
+				BCA473442274517D0027CA71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCA473452274517D0027CA71 /* Build configuration list for PBXNativeTarget "Hackathon 3.0UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCA473462274517D0027CA71 /* Debug */,
+				BCA473472274517D0027CA71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BCA4730F2274517C0027CA71 /* Project object */;
+}

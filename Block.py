@@ -9,7 +9,7 @@ class Block:
         self.pool = pool
 
     def __repr__(self):
-        dashes = "-" * 100 + "\n"
+        dashes = "-" * 50 + "\n"
         string = dashes + "Block Hash: " + self.calculate_hash() + "\n" + dashes
 
         for ticket in self.pool:

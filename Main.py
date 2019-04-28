@@ -47,8 +47,13 @@ if __name__ == "__main__":
                 print("Invalid arguments")
                 continue
             blockchain.transfer_ticket(prompt[1], prompt[2], prompt[3], prompt[4])
-        elif prompt[0] == "head":
-            print(blockchain.head)
+        elif prompt[0] == "owner":
+            owner = prompt[1]
+            ret_val = blockchain.find_owned_tickets(owner)
+            message = ""
+            for ticket in ret_val:
+                message += ticket.to_client()
+            print(message)
         else:
             print("Unknown command.")
 
